@@ -455,7 +455,7 @@ public final class QueleaProperties extends SortedProperties {
      * @return a list of user chosen fonts to appear in the theme dialog.
      */
     public List<String> getChosenFonts() {
-        String fontStr = getProperty(chosenFontsKey, "Arial|Liberation Sans|Noto Sans|Oxygen|Roboto|Vegur|Roboto Mono|Ubuntu Mono");
+        String fontStr = getProperty(chosenFontsKey, "Arial|Liberation Sans|Meiryo|Noto Sans|Oxygen|Roboto|Vegur|Roboto Mono|Ubuntu Mono");
         List<String> ret = new ArrayList<>();
         for (String str : fontStr.split("\\|")) {
             if (!str.trim().isEmpty()) {
